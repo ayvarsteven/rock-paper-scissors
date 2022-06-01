@@ -1,0 +1,1 @@
+whenever you choose the same option you automatically win the round. You can keep choosing the same option to win the round. 
