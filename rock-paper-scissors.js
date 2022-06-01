@@ -6,20 +6,28 @@ let rngSelect = numberGenerator(3);
 
 // selects rock paper or scissors based off of # selected
 
+let computerChoice = undefined
+
 function computerPlay() {
     if (rngSelect === 0) {
-        return 'rock'
+        let computerChoice1 = 'rock'
+        return computerChoice = computerChoice1
     } else if (rngSelect === 1) {
-        return 'paper'
+        let computerChoice1 = 'paper'
+        return computerChoice = computerChoice1
     } else if (rngSelect === 2) {
-        return 'scissors'
+        let computerChoice1 = 'scissors'
+        return computerChoice = computerChoice1 
     }
 } 
 
 // player selection
 
+let playerChoice = undefined
+
 function playerPlay() {
-    return prompt(`Select rock, paper or scissors`).toLowerCase();
+    let playerChoice1 = prompt(`Select rock, paper or scissors`).toLowerCase();
+    return playerChoice = playerChoice1
 }
 
 
@@ -54,12 +62,12 @@ let playerTally = 0;
 
 function winnerDisplay () {
     if (winner === `it's a tie! You both chose rock.` || winner === `It's a tie! You both chose paper.` || winner === `It's a tie! You both chose scissors.`) {
-        console.log(`It's a tie.`)
+        console.log(`*** TIE ***`)
     } else if (winner === `Player Wins! Paper beats rock.` || winner === `Player Wins! Scissors beats paper.` || winner === `Player Wins! Rock beats scissors.`) {
-        console.log(`Player Win`)
+        console.log(`*** PLAYER WIN ***`)
         return playerTally++;
     } else if (winner === `Computer Wins! Rock beats scissors.` || winner === `Computer Wins! Paper beats rock.` || winner === `Computer Wins! Scissors beats paper.`) {
-        console.log(`Computer Win`)
+        console.log(`*** COMPUTER WIN ***`)
         return computerTally++;
     }
 }
@@ -76,10 +84,13 @@ function displayChoices() {
 function game() {
     for (let i = 0; i < 5; i++) {
        playRound(computerPlay(), playerPlay());
+       console.log(`Player Choice: ${playerChoice}`)
+       console.log(`Computer Choice: ${computerChoice}`)
        winnerDisplay();
-    //    displayChoices();
+       console.log(`-----------------------------------`)
        displayScore();
-       // display choices after deciding winner and before tally
+       console.log(`-----------------------------------`)
+       console.log(` `)
     }
 }
 
