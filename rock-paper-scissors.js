@@ -29,13 +29,21 @@ const scissors = document.querySelector('#scissors');
 
 let playerSelection 
 
-function playerPlay(playerSelection) {
-
+function playerPlay() {
+    return playerSelection = 'rock'
 };
 
-rock.addEventListener('click', playerPlay)
-paper.addEventListener('click', playerPlay)
-scissors.addEventListener('click', playerPlay)
+rock.addEventListener('click', function () {
+    return playerSelection = 'rock'
+})
+
+paper.addEventListener('click', function () {
+    return playerSelection = 'paper'
+})
+
+scissors.addEventListener('click', function () {
+    return playerSelection = 'scissors'
+})
 
 console.log(playerSelection);
 
