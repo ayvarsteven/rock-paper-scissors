@@ -29,9 +29,9 @@ const scissors = document.querySelector('#scissors');
 
 let playerSelection 
 
-function playerPlay() {
-    return playerSelection = 'rock'
-};
+// function playerPlay() {
+//     return playerSelection = 'rock'
+// };
 
 rock.addEventListener('click', function () {
     return playerSelection = 'rock'
@@ -44,8 +44,6 @@ paper.addEventListener('click', function () {
 scissors.addEventListener('click', function () {
     return playerSelection = 'scissors'
 })
-
-console.log(playerSelection);
 
 // function that plays a round
 
@@ -114,13 +112,13 @@ function displayChoices() {
 function game() {
   for (let i = 0; i < 5; i++) {
     playRound(computerPlay(), playerPlay());
-    //    console.log(`Player Choice: ${playerChoice}`)
-    //    console.log(`Computer Choice: ${computerChoice}`)
-    //    winnerDisplay();
-    //    console.log(`-----------------------------------`)
-    //    displayScore();
-    //    console.log(`-----------------------------------`)
-    //    console.log(` `)
+       console.log(`Player Choice: ${playerSelection}`)
+       console.log(`Computer Choice: ${computerChoice}`)
+       winnerDisplay();
+       console.log(`-----------------------------------`)
+       displayScore();
+       console.log(`-----------------------------------`)
+       console.log(` `)
   }
 }
 
