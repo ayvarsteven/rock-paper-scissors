@@ -23,34 +23,13 @@ function computerPlay() {
 
 // player selection
 
-const rock = document.querySelector("#rock");
-const paper = document.querySelector("#paper");
-const scissors = document.querySelector("#scissors");
-
-function selectRock() {
-   console.log(`player has selected rock`)
-}
-
-function selectPaper() {
-    return console.log(`player has selected paper`)
-}
-
-function selectScissors() {
-    return console.log(`player has selected scissors`)
-}
-
-rock.addEventListener('click', selectRock);
-paper.addEventListener('click', selectPaper);
-scissors.addEventListener('click', selectScissors);
-
-console.log(rock)
-
-let playerChoice;
-let playerSelect = undefined;
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
 
 function playerPlay() {
 
-}
+};
 
 
 // function that plays a round
