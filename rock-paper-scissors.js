@@ -10,14 +10,11 @@ let computerChoice = undefined;
 
 function computerPlay() {
   if (rngSelect === 0) {
-    let computerChoice1 = "rock";
-    return (computerChoice = computerChoice1);
+    return computerChoice = 'rock'
   } else if (rngSelect === 1) {
-    let computerChoice1 = "paper";
-    return (computerChoice = computerChoice1);
+    return computerChoice = 'paper'
   } else if (rngSelect === 2) {
-    let computerChoice1 = "scissors";
-    return (computerChoice = computerChoice1);
+    return computerChoice = 'scissors'
   }
 }
 
@@ -28,10 +25,6 @@ const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
 
 let playerSelection 
-
-// function playerPlay() {
-//     return playerSelection = 'rock'
-// };
 
 rock.addEventListener('click', function () {
     return playerSelection = 'rock'
@@ -48,7 +41,7 @@ scissors.addEventListener('click', function () {
 // function that plays a round
 
 function playRound(computerSelection, playerSelection) {
-  if (computerSelection === "rock" && playerSelection === "rock") {
+    if (computerSelection === "rock" && playerSelection === "rock") {
     return (winner = `it's a tie! You both chose rock.`);
   } else if (computerSelection === "rock" && playerSelection === "paper") {
     return (winner = `Player Wins! Paper beats rock.`);
