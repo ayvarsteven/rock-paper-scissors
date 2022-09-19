@@ -27,10 +27,17 @@ const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
 
-function playerPlay() {
+let playerSelection 
+
+function playerPlay(playerSelection) {
 
 };
 
+rock.addEventListener('click', playerPlay)
+paper.addEventListener('click', playerPlay)
+scissors.addEventListener('click', playerPlay)
+
+console.log(playerSelection);
 
 // function that plays a round
 
