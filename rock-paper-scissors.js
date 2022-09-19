@@ -1,10 +1,10 @@
-// rng (sets rng from 0-2)
+// rng (sets rng from 0-2) (this is how the computer selection is defined)
 
 let numberGenerator = (intRange) => Math.floor(Math.random() * intRange);
 
 let rngSelect = numberGenerator(3);
 
-// selects rock paper or scissors based off of # selected
+// selects rock paper or scissors based off of # selected (computer select)
 
 let computerChoice = undefined;
 
@@ -27,34 +27,31 @@ const rock = document.querySelector("#rock");
 const paper = document.querySelector("#paper");
 const scissors = document.querySelector("#scissors");
 
+function selectRock() {
+   console.log(`player has selected rock`)
+}
+
+function selectPaper() {
+    return console.log(`player has selected paper`)
+}
+
+function selectScissors() {
+    return console.log(`player has selected scissors`)
+}
+
+rock.addEventListener('click', selectRock);
+paper.addEventListener('click', selectPaper);
+scissors.addEventListener('click', selectScissors);
+
+console.log(rock)
+
 let playerChoice;
-    let playerSelect = undefined;
+let playerSelect = undefined;
 
 function playerPlay() {
 
-    function definePlayerSelection () {
-    }
-  rock.addEventListener("click", function () {
-    // console.log(`player selection is rock`);
-    return playerSelect === 'rock'
-  });
-
-  paper.addEventListener("click", function () {
-    console.log(`player selection is paper`);
-  });
-
-  scissors.addEventListener("click", function () {
-    console.log(`player selection is scissors`);
-  });
-
-//   let playerChoice1;
-  // let playerChoice1 = prompt(`Select rock, paper or scissors`).toLowerCase(); PLAYER SELECT CHOICE USING PROMPT
-  console.log(playerSelect);
-
-//   return (playerChoice = playerChoice1);
 }
 
-rock.addEventListener("click", playRound);
 
 // function that plays a round
 
@@ -121,7 +118,7 @@ function displayChoices() {
 }
 
 function game() {
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 5; i++) {
     playRound(computerPlay(), playerPlay());
     //    console.log(`Player Choice: ${playerChoice}`)
     //    console.log(`Computer Choice: ${computerChoice}`)
