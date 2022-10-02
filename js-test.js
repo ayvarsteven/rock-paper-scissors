@@ -18,6 +18,8 @@ function computerPlay() {
   }
 }
 
+computerPlay();
+
 // ====================== player-selection =========================
 
 
@@ -43,9 +45,32 @@ scissors.addEventListener('click', function() {
 // ====================== plays-round =========================
 
 function playRound(player, computer) {
-
+    if (computerSelection === "rock" && playerSelection === "rock") {
+    console.log(`it's a tie! You both chose rock.`);
+  } else if (computerSelection === "rock" && playerSelection === "paper") {
+    console.log(`Player Wins! Paper beats rock.`);
+  } else if (computerSelection === "rock" && playerSelection === "scissors") {
+    console.log(`Computer Wins! Rock beats scissors.`);
+  } else if (computerSelection === "paper" && playerSelection === "rock") {
+    console.log(`Computer Wins! Paper beats rock.`);
+  } else if (computerSelection === "paper" && playerSelection === "paper") {
+    console.log(`It's a tie! You both chose paper.`);
+  } else if (computerSelection === "paper" && playerSelection === "scissors") {
+    console.log(`Player Wins! Scissors beats paper.`);
+  } else if (computerSelection === "scissors" && playerSelection === "rock") {
+    console.log(`Player Wins! Rock beats scissors.`);
+  } else if (computerSelection === "scissors" && playerSelection === "paper") {
+    console.log(`Computer Wins! Scissors beats paper.`);
+  } else if (
+    computerSelection === "scissors" &&
+    playerSelection === "scissors"
+  ) {
+    console.log(`It's a tie! You both chose scissors.`);
+  } else {
+    return `Invalid input. Please choose rock, paper or scissors.`;
+  }
 }
 
-playRound(playerSelection) 
+playRound(playerSelection, computerSelection) 
 
 // ====================== title =========================
