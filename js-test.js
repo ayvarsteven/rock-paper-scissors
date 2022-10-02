@@ -1,3 +1,6 @@
+// ====================== player-selection =========================
+
+
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
@@ -16,3 +19,11 @@ scissors.addEventListener('click', function() {
     playerSelection = 'scissors'
     console.log(playerSelection)
 })
+
+// ====================== plays-round =========================
+
+function playRound(playerSelection) {
+
+}
+
+// ====================== title =========================
