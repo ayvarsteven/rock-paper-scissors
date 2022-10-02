@@ -31,15 +31,21 @@ let playerSelection = undefined
 
 rock.addEventListener('click', function() {
     playerSelection = 'rock'
-    console.log(playerSelection)
+    console.log(`Player Selection: ${playerSelection}`)
+    console.log(`Computer Selection: ${computerSelection}`)
+    playRound()
 })
 paper.addEventListener('click', function() {
     playerSelection = 'paper'
-    console.log(playerSelection)
+    console.log(`Player Selection: ${playerSelection}`)
+    console.log(`Computer Selection: ${computerSelection}`)
+    playRound()
 })
 scissors.addEventListener('click', function() {
     playerSelection = 'scissors'
-    console.log(playerSelection)
+    console.log(`Player Selection: ${playerSelection}`)
+    console.log(`Computer Selection: ${computerSelection}`)
+    playRound()
 })
 
 // ====================== plays-round =========================
