@@ -6,15 +6,15 @@ let rngSelect = numberGenerator(3);
 
 // ====================== computer-selection =========================
 
-let computerChoice = undefined;
+let computerSelection = undefined;
 
 function computerPlay() {
   if (rngSelect === 0) {
-    return computerChoice = 'rock'
+    return computerSelection = 'rock'
   } else if (rngSelect === 1) {
-    return computerChoice = 'paper'
+    return computerSelection = 'paper'
   } else if (rngSelect === 2) {
-    return computerChoice = 'scissors'
+    return computerSelection = 'scissors'
   }
 }
 
