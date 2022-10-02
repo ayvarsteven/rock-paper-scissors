@@ -49,10 +49,8 @@ rock.addEventListener('click', function() {
         // --- display-winner ---
 
         const winnerDisplay = document.createElement('p');
-        winnerDisplay.textContent = `Winner: `
+        winnerDisplay.textContent = `Winner: ${winner}`
         body.appendChild(winnerDisplay);
-        
-
     })
 
 paper.addEventListener('click', function() {
@@ -73,6 +71,12 @@ paper.addEventListener('click', function() {
         const computerSelectionDisplay = document.createElement('p');
         computerSelectionDisplay.textContent = `Computer Selection: ${computerSelection}`
         body.appendChild(computerSelectionDisplay);
+
+        // --- display-winner ---
+
+        const winnerDisplay = document.createElement('p');
+        winnerDisplay.textContent = `Winner: ${winner}`
+        body.appendChild(winnerDisplay);
 })
 
 scissors.addEventListener('click', function() {
@@ -93,9 +97,17 @@ scissors.addEventListener('click', function() {
         const computerSelectionDisplay = document.createElement('p');
         computerSelectionDisplay.textContent = `Computer Selection: ${computerSelection}`
         body.appendChild(computerSelectionDisplay);
+
+        // --- display-winner ---
+
+        const winnerDisplay = document.createElement('p');
+        winnerDisplay.textContent = `Winner: ${winner}`
+        body.appendChild(winnerDisplay);
 })
 
 // ====================== ~ play-round =========================
+
+let winner
 
 function playRound(player, computer) {
     if (computerSelection.toLowerCase() === "rock" && playerSelection.toLowerCase() === "rock") {
