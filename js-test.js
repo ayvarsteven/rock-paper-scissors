@@ -34,17 +34,25 @@ rock.addEventListener('click', function() {
     console.log(`Computer Selection: ${computerSelection}`)
     playRound()
 
-    // ====================== display-selection =========================
+        // --- display-selection ---
 
-    const body = document.querySelector('body')
+        const body = document.querySelector('body')
 
-    const playerSelectionDisplay = document.createElement('p');
-    playerSelectionDisplay.textContent = `Player Selection: ${playerSelection}`
-    body.appendChild(playerSelectionDisplay);
+        const playerSelectionDisplay = document.createElement('p');
+        playerSelectionDisplay.textContent = `Player Selection: ${playerSelection}`
+        body.appendChild(playerSelectionDisplay);
 
-    const computerSelectionDisplay = document.createElement('p');
-    computerSelectionDisplay.textContent = `Computer Selection: ${computerSelection}`
-    body.appendChild(computerSelectionDisplay);
+        const computerSelectionDisplay = document.createElement('p');
+        computerSelectionDisplay.textContent = `Computer Selection: ${computerSelection}`
+        body.appendChild(computerSelectionDisplay);
+
+        // --- display-winner ---
+
+        const winnerDisplay = document.createElement('p');
+        winnerDisplay.textContent = `Winner: `
+        body.appendChild(winnerDisplay);
+        
+
     })
 
 paper.addEventListener('click', function() {
@@ -54,17 +62,17 @@ paper.addEventListener('click', function() {
     console.log(`Computer Selection: ${computerSelection}`)
     playRound()
 
-    // ====================== display-selection =========================
+        // --- display-selection ---
 
-    const body = document.querySelector('body')
+        const body = document.querySelector('body')
 
-    const playerSelectionDisplay = document.createElement('p');
-    playerSelectionDisplay.textContent = `Player Selection: ${playerSelection}`
-    body.appendChild(playerSelectionDisplay);
+        const playerSelectionDisplay = document.createElement('p');
+        playerSelectionDisplay.textContent = `Player Selection: ${playerSelection}`
+        body.appendChild(playerSelectionDisplay);
 
-    const computerSelectionDisplay = document.createElement('p');
-    computerSelectionDisplay.textContent = `Computer Selection: ${computerSelection}`
-    body.appendChild(computerSelectionDisplay);
+        const computerSelectionDisplay = document.createElement('p');
+        computerSelectionDisplay.textContent = `Computer Selection: ${computerSelection}`
+        body.appendChild(computerSelectionDisplay);
 })
 
 scissors.addEventListener('click', function() {
@@ -74,17 +82,17 @@ scissors.addEventListener('click', function() {
     console.log(`Computer Selection: ${computerSelection}`)
     playRound()
 
-    // ====================== display-selection =========================
+        // --- display-selection ---
 
-    const body = document.querySelector('body')
+        const body = document.querySelector('body')
 
-    const playerSelectionDisplay = document.createElement('p');
-    playerSelectionDisplay.textContent = `Player Selection: ${playerSelection}`
-    body.appendChild(playerSelectionDisplay);
+        const playerSelectionDisplay = document.createElement('p');
+        playerSelectionDisplay.textContent = `Player Selection: ${playerSelection}`
+        body.appendChild(playerSelectionDisplay);
 
-    const computerSelectionDisplay = document.createElement('p');
-    computerSelectionDisplay.textContent = `Computer Selection: ${computerSelection}`
-    body.appendChild(computerSelectionDisplay);
+        const computerSelectionDisplay = document.createElement('p');
+        computerSelectionDisplay.textContent = `Computer Selection: ${computerSelection}`
+        body.appendChild(computerSelectionDisplay);
 })
 
 // ====================== plays-round =========================
