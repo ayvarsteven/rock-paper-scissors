@@ -22,8 +22,10 @@ scissors.addEventListener('click', function() {
 
 // ====================== plays-round =========================
 
-function playRound(playerSelection) {
+function playRound(player, computer) {
 
 }
+
+playRound(playerSelection) 
 
 // ====================== title =========================
