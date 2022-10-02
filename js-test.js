@@ -1,3 +1,23 @@
+// ====================== rng =========================
+
+let numberGenerator = (intRange) => Math.floor(Math.random() * intRange);
+
+let rngSelect = numberGenerator(3);
+
+// ====================== computer-selection =========================
+
+let computerChoice = undefined;
+
+function computerPlay() {
+  if (rngSelect === 0) {
+    return computerChoice = 'rock'
+  } else if (rngSelect === 1) {
+    return computerChoice = 'paper'
+  } else if (rngSelect === 2) {
+    return computerChoice = 'scissors'
+  }
+}
+
 // ====================== player-selection =========================
 
 
