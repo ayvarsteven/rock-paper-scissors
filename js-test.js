@@ -18,8 +18,6 @@ function computerPlay() {
   }
 }
 
-computerPlay();
-
 // ====================== player-selection =========================
 
 
@@ -31,18 +29,21 @@ let playerSelection = undefined
 
 rock.addEventListener('click', function() {
     playerSelection = 'rock'
+    computerPlay();
     console.log(`Player Selection: ${playerSelection}`)
     console.log(`Computer Selection: ${computerSelection}`)
     playRound()
 })
 paper.addEventListener('click', function() {
     playerSelection = 'paper'
+    computerPlay();
     console.log(`Player Selection: ${playerSelection}`)
     console.log(`Computer Selection: ${computerSelection}`)
     playRound()
 })
 scissors.addEventListener('click', function() {
     playerSelection = 'scissors'
+    computerPlay();
     console.log(`Player Selection: ${playerSelection}`)
     console.log(`Computer Selection: ${computerSelection}`)
     playRound()
