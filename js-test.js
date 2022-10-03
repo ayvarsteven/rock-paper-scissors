@@ -39,7 +39,7 @@ rock.addEventListener('click', function() {
 
         const playerSelectionDisplay = document.createElement('p');
         playerSelectionDisplay.textContent = `Player Selection: ${playerSelection}`
-        body.appendChild(playerSelectionDisplay);
+        body.appendChild(playerSelectionDisplay)
 
         const computerSelectionDisplay = document.createElement('p');
         computerSelectionDisplay.textContent = `Computer Selection: ${computerSelection}`
@@ -59,6 +59,10 @@ rock.addEventListener('click', function() {
         const score = document.createElement('p');
         score.textContent = `Player Score: ${playerTally} | Computer Score: ${computerTally}`
         body.appendChild(score);
+
+        // --- display-winner ---
+
+        displayWinner()
     })
 
 paper.addEventListener('click', function() {
@@ -93,6 +97,10 @@ paper.addEventListener('click', function() {
         const score = document.createElement('p');
         score.textContent = `Player Score: ${playerTally} | Computer Score: ${computerTally}`
         body.appendChild(score);
+
+        // --- display-winner ---
+
+        displayWinner()
 })
 
 scissors.addEventListener('click', function() {
@@ -126,6 +134,10 @@ scissors.addEventListener('click', function() {
         const score = document.createElement('p');
         score.textContent = `Player Score: ${playerTally} | Computer Score: ${computerTally}`
         body.appendChild(score);
+
+        // --- display-winner ---
+
+        displayWinner()
 })
 
 // ====================== ~ play-round =========================
@@ -179,5 +191,16 @@ function tally() {
     return computerTally++;
   }
 }
+
+// ====================== ~ display-winner =========================
+
+function displayWinner() {
+  if (computerTally === 5) {
+    console.log(`*** COMPUTER WINS ***`);
+  } else if (playerTally === 5) {
+    console.log(`*** PLAYER WINS ***`);
+  }
+}
+
 
 // ====================== ~ title =========================
