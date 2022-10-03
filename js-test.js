@@ -156,25 +156,17 @@ let computerTally = 0;
 let playerTally = 0;
 
 function tally() {
-  if (
-    winner === `it's a tie! You both chose rock.` ||
-    winner === `It's a tie! You both chose paper.` ||
-    winner === `It's a tie! You both chose scissors.`
-  ) {
-    console.log(`*** TIE ***`);
-  } else if (
+   if (
     winner === `Player Wins! Paper beats rock.` ||
     winner === `Player Wins! Scissors beats paper.` ||
     winner === `Player Wins! Rock beats scissors.`
   ) {
-    console.log(`*** PLAYER WIN ***`);
     return playerTally++;
   } else if (
     winner === `Computer Wins! Rock beats scissors.` ||
     winner === `Computer Wins! Paper beats rock.` ||
     winner === `Computer Wins! Scissors beats paper.`
   ) {
-    console.log(`*** COMPUTER WIN ***`);
     return computerTally++;
   }
 }
