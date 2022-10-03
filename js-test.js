@@ -195,9 +195,17 @@ function tally() {
 // ====================== ~ display-winner =========================
 
 function displayWinner() {
+  body = document.querySelector('body')
   if (computerTally === 5) {
+    const computerWin = document.createElement('h2')
+    computerWin.textContent = `*** COMPUTER WINS ***`;
+    body.appendChild(computerWin);
     console.log(`*** COMPUTER WINS ***`);
   } else if (playerTally === 5) {
+    const playerWin = document.createElement('h2')
+    playerWin.textContent = `*** PLAYER WINS ***`;
+    body.appendChild(playerWin);
+    console.log(`*** COMPUTER WINS ***`);
     console.log(`*** PLAYER WINS ***`);
   }
 }
