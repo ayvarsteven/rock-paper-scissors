@@ -82,6 +82,11 @@ paper.addEventListener('click', function() {
         const winnerDisplay = document.createElement('p');
         winnerDisplay.textContent = `Winner: ${winner}`
         body.appendChild(winnerDisplay);
+
+        // --- add-to-tally ---
+
+        tally();
+        console.log(`Player Tally: ${playerTally} | Computer Tally: ${computerTally}`)
 })
 
 scissors.addEventListener('click', function() {
@@ -107,6 +112,11 @@ scissors.addEventListener('click', function() {
         const winnerDisplay = document.createElement('p');
         winnerDisplay.textContent = `Winner: ${winner}`
         body.appendChild(winnerDisplay);
+
+        // --- add-to-tally ---
+
+        tally();
+        console.log(`Player Tally: ${playerTally} | Computer Tally: ${computerTally}`)
 })
 
 // ====================== ~ play-round =========================
