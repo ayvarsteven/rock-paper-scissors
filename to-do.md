@@ -13,9 +13,9 @@
     Computer Choice -> paper
 
     if i click the rock button again i will always lose. 
-- [ ] **add best of 5** - append the score to the DOM. You use the for loop to change refresh the computers choice. So everytime you click a button a new game is played but it adds to the winners score. 
-- [ ] **display winner** - *** TIE *** or *** PLAYER WIN *** or *** COMPUTER WIN ***
-
+- [x] **add best of 5** - append the score to the DOM.
+- [x] **display winner** - *** TIE *** or *** PLAYER WIN *** or *** COMPUTER WIN ***
+- [ ] **Change UI** - make it so that the scores and player selections are UPDATED in the dom instead of creating new ones. 
 - [ ] **Refactor Code** - Reduce amount of code within playRound() function and use helper functions instead
 
 
