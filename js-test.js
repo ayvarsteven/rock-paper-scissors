@@ -29,6 +29,7 @@ let playerSelection = undefined
 
 rock.addEventListener('click', function() {
     playerSelection = 'Rock'
+    rngSelect = numberGenerator(3);
     computerPlay();
     console.log(`Player Selection: ${playerSelection}`)
     console.log(`Computer Selection: ${computerSelection}`)
@@ -56,10 +57,16 @@ rock.addEventListener('click', function() {
 
         tally();
         console.log(`Player Tally: ${playerTally} | Computer Tally: ${computerTally}`)
+
+        // --- display-score ---
+        const score = document.createElement('p');
+        score.textContent = `Player Score: ${playerTally} | Computer Score: ${computerTally}`
+        body.appendChild(score);
     })
 
 paper.addEventListener('click', function() {
     playerSelection = 'Paper'
+    rngSelect = numberGenerator(3);
     computerPlay();
     console.log(`Player Selection: ${playerSelection}`)
     console.log(`Computer Selection: ${computerSelection}`)
@@ -87,10 +94,16 @@ paper.addEventListener('click', function() {
 
         tally();
         console.log(`Player Tally: ${playerTally} | Computer Tally: ${computerTally}`)
+
+        // --- display-score ---
+        const score = document.createElement('p');
+        score.textContent = `Player Score: ${playerTally} | Computer Score: ${computerTally}`
+        body.appendChild(score);
 })
 
 scissors.addEventListener('click', function() {
     playerSelection = 'Scissors'
+    rngSelect = numberGenerator(3);
     computerPlay();
     console.log(`Player Selection: ${playerSelection}`)
     console.log(`Computer Selection: ${computerSelection}`)
@@ -117,6 +130,11 @@ scissors.addEventListener('click', function() {
 
         tally();
         console.log(`Player Tally: ${playerTally} | Computer Tally: ${computerTally}`)
+
+        // --- display-score ---
+        const score = document.createElement('p');
+        score.textContent = `Player Score: ${playerTally} | Computer Score: ${computerTally}`
+        body.appendChild(score);
 })
 
 // ====================== ~ play-round =========================
