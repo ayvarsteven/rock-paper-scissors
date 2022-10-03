@@ -6,4 +6,5 @@
     rock beats paper, PLAYER WINS!!!
     ```
 - [ ] **Add tally** - keep track of who wins (maybe make it a best of 5)
+- [ ] **Add tally to Dom** - append the score to the DOM
 - [ ] **Refactor Code** - Reduce amount of code within playRound() function and use helper functions instead
