@@ -31,8 +31,6 @@ rock.addEventListener('click', function() {
     playerSelection = 'Rock'
     rngSelect = numberGenerator(3);
     computerPlay();
-    console.log(`Player Selection: ${playerSelection}`)
-    console.log(`Computer Selection: ${computerSelection}`)
     playRound()
 
         // --- display-selection ---
@@ -56,7 +54,6 @@ rock.addEventListener('click', function() {
         // --- add-to-tally ---
 
         tally();
-        console.log(`Player Tally: ${playerTally} | Computer Tally: ${computerTally}`)
 
         // --- display-score ---
         const score = document.createElement('p');
@@ -68,8 +65,6 @@ paper.addEventListener('click', function() {
     playerSelection = 'Paper'
     rngSelect = numberGenerator(3);
     computerPlay();
-    console.log(`Player Selection: ${playerSelection}`)
-    console.log(`Computer Selection: ${computerSelection}`)
     playRound()
 
         // --- display-selection ---
@@ -93,7 +88,6 @@ paper.addEventListener('click', function() {
         // --- add-to-tally ---
 
         tally();
-        console.log(`Player Tally: ${playerTally} | Computer Tally: ${computerTally}`)
 
         // --- display-score ---
         const score = document.createElement('p');
@@ -105,8 +99,6 @@ scissors.addEventListener('click', function() {
     playerSelection = 'Scissors'
     rngSelect = numberGenerator(3);
     computerPlay();
-    console.log(`Player Selection: ${playerSelection}`)
-    console.log(`Computer Selection: ${computerSelection}`)
     playRound()
 
         // --- display-selection ---
@@ -129,7 +121,6 @@ scissors.addEventListener('click', function() {
         // --- add-to-tally ---
 
         tally();
-        console.log(`Player Tally: ${playerTally} | Computer Tally: ${computerTally}`)
 
         // --- display-score ---
         const score = document.createElement('p');
